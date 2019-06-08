@@ -1,10 +1,30 @@
-import React from 'react';
-import {Header} from 'semantic-ui-react';
-import PageLayout from '../../organisms/PageLayout';
+import React from "react";
+import { Header } from "semantic-ui-react";
+import { connect } from "react-redux";
+import PageLayout from "../../organisms/PageLayout";
+import { fetchSkills } from "../../actions";
 
-const Skills = () => 
-<PageLayout>
-  <Header>Skills</Header>
-</PageLayout>
+class Skills extends React.Component {
+  componentWillMount() {
+    this.props.fetchSkills();
+  }
 
-export default Skills;
+  render() {
+    const { skills } = this.props;
+    return (
+      <PageLayout>
+        <Header>Skills</Header>
+        {skills && skills.map(skill => <div>{skill.name}</div>)}
+      </PageLayout>
+    );
+  }
+}
+
+const mapStateToProps = state => ({
+  skills: state.skills
+});
+
+export default connect(
+  mapStateToProps,
+  { fetchSkills }
+)(Skills);
