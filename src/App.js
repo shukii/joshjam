@@ -2,10 +2,11 @@ import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
-import "./scss/App.scss";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
-import Experience from "./pages/Experience";
+import Portfolio from "./pages/Portfolio";
+
+import "./scss/App.scss";
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
         <Route exact path="/home" render={() => <Home />} />
         <Route exact path="/about" render={() => <About />} />
         <Route exact path="/skills" render={() => <Skills />} />
-        <Route exact path="/experience" render={() => <Experience />} />
+        <Route exact path="/portfolio" render={() => <Portfolio />} />
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>
