@@ -1,8 +1,10 @@
 import React from "react";
-import { Header } from "semantic-ui-react";
+import { Header, Label } from "semantic-ui-react";
 import { connect } from "react-redux";
 import PageLayout from "../../organisms/PageLayout";
 import { fetchSkills } from "../../actions";
+
+import "./_styles.scss";
 
 class Skills extends React.Component {
   componentWillMount() {
@@ -14,7 +16,14 @@ class Skills extends React.Component {
     return (
       <PageLayout>
         <Header>Skills</Header>
-        {skills && skills.map(skill => <div>{skill.name}</div>)}
+        {skills &&
+          skills.map(skill => {
+            return (
+              <Label key={skill.name} className={`skill-label-${skill.type}`}>
+                {skill.name}
+              </Label>
+            );
+          })}
       </PageLayout>
     );
   }

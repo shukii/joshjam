@@ -41,10 +41,10 @@
   },
   {
     "name": "Scrum",
-    "type": "agile"
+    "type": "methodology"
   },
   {
     "name": "Kanban",
-    "type": "agile"
+    "type": "methodology"
   }
 ]
