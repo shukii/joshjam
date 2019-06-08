@@ -10,9 +10,14 @@ const reducer = (state = initialState, action) => {
     case types.FETCH_HOME:
       const home = action.payload;
       return { ...state, home: home };
+
     case types.FETCH_SKILLS:
       const skills = action.payload;
       return { ...state, skills: skills };
+
+    case types.FETCH_BRANDS:
+      const brands = action.payload;
+      return { ...state, brands: brands };
 
     default:
       return state;

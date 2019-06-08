@@ -21,3 +21,14 @@ export const fetchSkills = () => dispatch => {
       });
     });
 };
+
+export const fetchBrands = () => dispatch => {
+  fetch(`data/brands.json`)
+    .then(response => response.json())
+    .then(response => {
+      dispatch({
+        type: types.FETCH_BRANDS,
+        payload: response
+      });
+    });
+};
