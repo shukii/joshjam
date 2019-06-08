@@ -27,7 +27,7 @@ class Skills extends React.Component {
             );
           })}
         <Header>Brands</Header>
-        <Grid columns={4}>
+        <Grid stackable columns={3} verticalAlign="middle">
           {brands &&
             brands.map(brand => (
               <Grid.Column>

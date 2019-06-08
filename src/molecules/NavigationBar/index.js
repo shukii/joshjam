@@ -11,7 +11,10 @@ const NavigationBar = () => (
       <Link to="/about">About Me</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="skills">Skills &amp; Experience</Link>
+      <Link to="/skills">Skills &amp; Brands</Link>
+    </Menu.Item>
+    <Menu.Item>
+      <Link to="/portfolio">Portfolio</Link>
     </Menu.Item>
   </Menu>
 );
