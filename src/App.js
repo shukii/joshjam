@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Switch, Route, Redirect} from 'react-router-dom';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
+import './scss/App.scss';
+import About from './pages/About';
+import Skills from './pages/Skills';
+import Experience from './pages/Experience';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route exact path="/home" render={() => <Home/>}/>
+        <Route exact path="/about" render={() => <About/>}/>
+        <Route exact path="/skills" render={() => <Skills/>}/>
+        <Route exact path="/experience" render={() => <Experience/>}/>
+        <Route exact path="/">
+          <Redirect to="/home" />
+        </Route>
+        <Route render={() => <NotFound/>}/> 
+      </Switch>
     </div>
   );
 }
