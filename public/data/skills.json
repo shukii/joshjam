@@ -1,0 +1,50 @@
+[
+  {
+    "name": "React JS",
+    "type": "frontend"
+  },
+  {
+    "name": "Vue JS",
+    "type": "frontend"
+  },
+  {
+    "name": "HTML",
+    "type": "frontend"
+  },
+  {
+    "name": "CSS",
+    "type": "frontend"
+  },
+  {
+    "name": "JavaScript",
+    "type": "frontend"
+  },
+  {
+    "name": "CircleCI",
+    "type": "devops"
+  },
+  {
+    "name": "Heroku",
+    "type": "infra"
+  },
+  {
+    "name": "NodeJS",
+    "type": "backend"
+  },
+  {
+    "name": "Swift",
+    "type": "mobile"
+  },
+  {
+    "name": "Test Driven Development",
+    "type": "methodology"
+  },
+  {
+    "name": "Scrum",
+    "type": "agile"
+  },
+  {
+    "name": "Kanban",
+    "type": "agile"
+  }
+]
