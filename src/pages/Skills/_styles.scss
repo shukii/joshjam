@@ -1,0 +1,33 @@
+@import "../../scss/variables";
+
+.ui.label.skill-label {
+  &-frontend {
+    background-color: $red;
+    color: $white;
+  }
+
+  &-backend {
+    background-color: $blue;
+    color: $white;
+  }
+
+  &-devops {
+    background-color: $green;
+    color: $white;
+  }
+
+  &-infra {
+    background-color: $orange;
+    color: $white;
+  }
+
+  &-mobile {
+    background-color: $yellow;
+    color: $white;
+  }
+
+  &-methodology {
+    background-color: $black;
+    color: $white;
+  }
+}
