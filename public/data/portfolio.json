@@ -1,6 +1,68 @@
 [
   {
     "brand": {
+      "name": "Condé Nast International",
+      "image": "condenast.png"
+    },
+    "product": "cni dot com",
+    "description": "Company's global corporate website",
+    "images": ["cni-com-1.png", "cni-com-2.png", "cni-com-3.png"],
+    "skills": [
+      {
+        "name": "HTML",
+        "type": "frontend"
+      },
+      {
+        "name": "Sass",
+        "type": "frontend"
+      },
+      {
+        "name": "React",
+        "type": "frontend"
+      },
+      {
+        "name": "Contentful CMS",
+        "type": "backend"
+      },
+      {
+        "name": "Terraform",
+        "type": "devops"
+      },
+      {
+        "name": "Kubernetes",
+        "type": "infra"
+      }
+    ]
+  },
+  {
+    "brand": {
+      "name": "Ordo",
+      "image": "ordo.png"
+    },
+    "product": "Smart Request App",
+    "description": "Proof of Concept smart payment request PWA",
+    "images": ["ordo-1.png", "ordo-2.png", "ordo-3.png", "ordo-4.png"],
+    "skills": [
+      {
+        "name": "HTML",
+        "type": "frontend"
+      },
+      {
+        "name": "Sass",
+        "type": "frontend"
+      },
+      {
+        "name": "VueJS",
+        "type": "frontend"
+      },
+      {
+        "name": "PWA",
+        "type": "frontend"
+      }
+    ]
+  },
+  {
+    "brand": {
       "name": "Capco",
       "image": "capco.png"
     },
