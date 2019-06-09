@@ -25,6 +25,10 @@
         "type": "backend"
       },
       {
+        "name": "Docker",
+        "type": "devops"
+      },
+      {
         "name": "Terraform",
         "type": "devops"
       },
