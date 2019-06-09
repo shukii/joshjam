@@ -1,3 +1,9 @@
+@import "../../scss/global";
+
 .project-image {
-  height: 200px;
+  width: 200px;
+
+  @include desktopXL {
+    width: 300px;
+  }
 }
