@@ -6,7 +6,12 @@ const Blurb = props => {
 
   return (
     <div className="blurb">
-      {blurb && blurb.map(line => <div class="line">{line}</div>)}
+      {blurb &&
+        blurb.map(line => (
+          <div key={line} className="line">
+            {line}
+          </div>
+        ))}
     </div>
   );
 };

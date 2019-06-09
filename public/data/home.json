@@ -5,5 +5,11 @@
     "He provides a fresh approach to problem solving, generating and communicating ideas impressively.",
     "From building an initial proof of concept, he can take it forward into a fully productionised system, adding value and delighting clients.",
     "As a senior frontend developer, with experience in integration, backend, databases and devops, Josh fits into agile development teams with ease."
-  ]
+  ],
+  "contact": {
+    "email": "josh@joshjam.com",
+    "telephone": "07877 956430",
+    "linkedIn": "josh-benson",
+    "twitter": "@shukii"
+  }
 }

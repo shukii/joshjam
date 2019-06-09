@@ -6,6 +6,7 @@ import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 
 import PageLayout from "../../organisms/PageLayout";
 import Blurb from "../../atoms/Blurb";
+import Contact from "../../molecules/Contact";
 
 import { fetchHome } from "../../actions";
 
@@ -17,7 +18,7 @@ class Home extends React.Component {
   }
 
   render() {
-    const { statement, blurb } = this.props;
+    const { statement, blurb, contact } = this.props;
     return (
       <PageLayout>
         <Grid stackable columns={2}>
@@ -30,6 +31,9 @@ class Home extends React.Component {
             <FontAwesomeIcon icon={faQuoteRight} size="3x" />
             <Blurb blurb={blurb} />
           </Grid.Column>
+          <Grid.Column>
+            <Contact {...contact} />
+          </Grid.Column>
         </Grid>
       </PageLayout>
     );
@@ -38,7 +42,8 @@ class Home extends React.Component {
 
 const mapStateToProps = state => ({
   statement: state.home.statement,
-  blurb: state.home.blurb
+  blurb: state.home.blurb,
+  contact: state.home.contact
 });
 
 export default connect(

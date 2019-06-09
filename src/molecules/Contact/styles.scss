@@ -1,0 +1,36 @@
+$margin: 10px;
+
+.contact {
+  text-align: left;
+  margin-top: 100px;
+  font-size: 20px;
+  font-weight: bold;
+
+  .email {
+    margin-top: $margin;
+  }
+
+  .telephone {
+    margin-top: $margin;
+    div {
+      display: inline;
+      margin-left: $margin;
+      top: -8px;
+      position: relative;
+    }
+  }
+
+  .linked-in {
+    margin-top: $margin;
+  }
+
+  .twitter {
+    margin-top: $margin;
+  }
+
+  a {
+    margin-left: $margin;
+    top: -8px;
+    position: relative;
+  }
+}
