@@ -7,10 +7,9 @@ const ImageList = props => {
   return (
     <Grid stackable columns={3}>
       {props.images.map(image => (
-        <Grid.Column>
+        <Grid.Column key={image}>
           <img
             className="project-image"
-            key={image}
             src={`/img/portfolio/${image}`}
             alt={image}
           />
