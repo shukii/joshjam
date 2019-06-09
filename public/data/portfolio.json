@@ -41,5 +41,28 @@
         "type": "database"
       }
     ]
+  },
+  {
+    "brand": {
+      "name": "TalkTalk",
+      "image": "talktalk.png"
+    },
+    "product": "UFO",
+    "description": "York's Ultrafast Fibre Optic Broadband Brochureware on main website",
+    "images": ["talktalk.png"],
+    "skills": [
+      {
+        "name": "HTML",
+        "type": "frontend"
+      },
+      {
+        "name": "CSS",
+        "type": "frontend"
+      },
+      {
+        "name": "AngularJS",
+        "type": "frontend"
+      }
+    ]
   }
 ]
