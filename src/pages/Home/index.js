@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 
 import PageLayout from "../../organisms/PageLayout";
+import Blurb from "../../atoms/Blurb";
+
 import { fetchHome } from "../../actions";
 
 import "./_styles.scss";
@@ -26,7 +28,7 @@ class Home extends React.Component {
             <FontAwesomeIcon icon={faQuoteLeft} size="3x" />
             <div className="statement">{statement}</div>
             <FontAwesomeIcon icon={faQuoteRight} size="3x" />
-            <div className="blurb">{blurb}</div>
+            <Blurb blurb={blurb} />
           </Grid.Column>
         </Grid>
       </PageLayout>
