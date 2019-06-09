@@ -1,7 +1,6 @@
 import React from "react";
 import { Header } from "semantic-ui-react";
 import { connect } from "react-redux";
-import { Grid } from "semantic-ui-react";
 import PageLayout from "../../organisms/PageLayout";
 import SkillList from "../../molecules/SkillList";
 import BrandTable from "../../molecules/BrandTable";

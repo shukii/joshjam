@@ -28,7 +28,23 @@
     "type": "infra"
   },
   {
+    "name": "Google Cloud Platform",
+    "type": "infra"
+  },
+  {
+    "name": "AWS",
+    "type": "infra"
+  },
+  {
+    "name": "Azure",
+    "type": "infra"
+  },
+  {
     "name": "NodeJS",
+    "type": "backend"
+  },
+  {
+    "name": "Java",
     "type": "backend"
   },
   {
@@ -44,7 +60,23 @@
     "type": "methodology"
   },
   {
+    "name": "Scaled Agile Framework",
+    "type": "methodology"
+  },
+  {
     "name": "Kanban",
     "type": "methodology"
+  },
+  {
+    "name": "Extreme Programming (XP)",
+    "type": "methodology"
+  },
+  {
+    "name": "Security Testing",
+    "type": "methodology"
+  },
+  {
+    "name": "Raspberry Pi",
+    "type": "hardware"
   }
 ]

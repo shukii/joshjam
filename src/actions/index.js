@@ -32,3 +32,14 @@ export const fetchBrands = () => dispatch => {
       });
     });
 };
+
+export const fetchPortfolio = () => dispatch => {
+  fetch(`data/portfolio.json`)
+    .then(response => response.json())
+    .then(response => {
+      dispatch({
+        type: types.FETCH_PORTFOLIO,
+        payload: response
+      });
+    });
+};

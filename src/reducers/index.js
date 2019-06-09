@@ -2,7 +2,8 @@ import types from "../actions/action-types";
 
 export const initialState = {
   home: {},
-  skills: []
+  skills: [],
+  portfolio: []
 };
 
 const reducer = (state = initialState, action) => {
@@ -18,6 +19,10 @@ const reducer = (state = initialState, action) => {
     case types.FETCH_BRANDS:
       const brands = action.payload;
       return { ...state, brands: brands };
+
+    case types.FETCH_PORTFOLIO:
+      const portfolio = action.payload;
+      return { ...state, portfolio: portfolio };
 
     default:
       return state;

@@ -7,14 +7,17 @@ class SkillList extends React.Component {
   render() {
     const { skills } = this.props;
     if (skills) {
-      return skills.map(skill => {
-        return (
-          <Label key={skill.name} className={`skill-label-${skill.type}`}>
-            {skill.name}
-          </Label>
-        );
-      });
+      return skills.map(skill => (
+        <Label
+          key={skill.name}
+          className={`skill-label skill-label-${skill.type}`}
+        >
+          {skill.name}
+        </Label>
+      ));
     }
+
+    return null;
   }
 }
 

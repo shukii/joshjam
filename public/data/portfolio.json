@@ -1,0 +1,45 @@
+[
+  {
+    "brand": {
+      "name": "Capco",
+      "image": "capco.png"
+    },
+    "product": "CapInTouch",
+    "description": "Company Internal Social Network",
+    "images": ["cit-1.png", "cit-2.png", "cit-3.png", "cit-4.png"],
+    "skills": [
+      {
+        "name": "HTML",
+        "type": "frontend"
+      },
+      {
+        "name": "CSS",
+        "type": "frontend"
+      },
+      {
+        "name": "JavaScript",
+        "type": "frontend"
+      },
+      {
+        "name": "JQuery",
+        "type": "frontend"
+      },
+      {
+        "name": "Java",
+        "type": "backend"
+      },
+      {
+        "name": "Spring",
+        "type": "backend"
+      },
+      {
+        "name": "Hibernate",
+        "type": "backend"
+      },
+      {
+        "name": "MySQL",
+        "type": "database"
+      }
+    ]
+  }
+]

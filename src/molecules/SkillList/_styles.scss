@@ -1,6 +1,8 @@
 @import "../../scss/variables";
 
 .ui.label.skill-label {
+  margin-bottom: 10px;
+
   &-frontend {
     background-color: $red;
     color: $white;
@@ -30,8 +32,4 @@
     background-color: $black;
     color: $white;
   }
-}
-
-.brand-image {
-  width: 200px;
 }

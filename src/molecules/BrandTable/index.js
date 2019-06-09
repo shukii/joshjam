@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid } from "semantic-ui-react";
+import BrandImage from "../../atoms/BrandImage";
 
 import "./_styles.scss";
 
@@ -12,11 +13,7 @@ class BrandTable extends React.Component {
           {brands &&
             brands.map(brand => (
               <Grid.Column key={brand.name}>
-                <img
-                  className="brand-image"
-                  src={`/img/brands/${brand.image}`}
-                  alt={brand.name}
-                />
+                <BrandImage {...brand} />
               </Grid.Column>
             ))}
         </Grid>

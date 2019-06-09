@@ -1,13 +1,13 @@
-import React from 'react';
-import NavigationBar from '../../molecules/NavigationBar';
-import { Container } from 'semantic-ui-react';
+import React from "react";
+import NavigationBar from "../../molecules/NavigationBar";
+import { Container } from "semantic-ui-react";
 
-import './_styles.scss';
+import "./_styles.scss";
 
 const PageLayout = ({ children }) => (
   <div className="page-layout">
-    <NavigationBar/>
-    <Container>
+    <NavigationBar />
+    <Container textAlign="center">
       <div className="page-content">{children}</div>
     </Container>
   </div>
