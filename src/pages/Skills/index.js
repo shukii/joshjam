@@ -1,11 +1,11 @@
 import React from "react";
-import { Header, Label } from "semantic-ui-react";
+import { Header } from "semantic-ui-react";
 import { connect } from "react-redux";
 import { Grid } from "semantic-ui-react";
 import PageLayout from "../../organisms/PageLayout";
+import SkillList from "../../molecules/SkillList";
+import BrandTable from "../../molecules/BrandTable";
 import { fetchSkills, fetchBrands } from "../../actions";
-
-import "./_styles.scss";
 
 class Skills extends React.Component {
   componentWillMount() {
@@ -18,28 +18,9 @@ class Skills extends React.Component {
     return (
       <PageLayout>
         <Header>Skills</Header>
-        {skills &&
-          skills.map(skill => {
-            return (
-              <Label key={skill.name} className={`skill-label-${skill.type}`}>
-                {skill.name}
-              </Label>
-            );
-          })}
+        <SkillList skills={skills} />
         <Header>Brands</Header>
-        <Grid stackable columns={3} verticalAlign="middle">
-          {brands &&
-            brands.map(brand => (
-              <Grid.Column>
-                <img
-                  className="brand-image"
-                  key={brand.name}
-                  src={`/img/brands/${brand.image}`}
-                  alt={brand.name}
-                />
-              </Grid.Column>
-            ))}
-        </Grid>
+        <BrandTable brands={brands} />
       </PageLayout>
     );
   }
