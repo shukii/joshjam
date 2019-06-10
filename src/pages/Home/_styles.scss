@@ -1,12 +1,8 @@
-.pic {
-  width: 90%;
-  border-radius: 50%;
-}
+.ui.container.introduction {
+  margin-top: 60px;
 
-.statement {
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 45px;
-  display: inline;
-  margin: 0 15px 0 15px;
+  .pic {
+    width: 90%;
+    border-radius: 50%;
+  }
 }

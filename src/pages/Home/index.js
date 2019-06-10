@@ -1,12 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
-import { Grid } from "semantic-ui-react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
+import { Grid, Container } from "semantic-ui-react";
 
 import PageLayout from "../../organisms/PageLayout";
+import ImageHeader from "../../organisms/ImageHeader";
 import Blurb from "../../atoms/Blurb";
-import Contact from "../../molecules/Contact";
 
 import { fetchHome } from "../../actions";
 
@@ -18,23 +16,20 @@ class Home extends React.Component {
   }
 
   render() {
-    const { statement, blurb, contact } = this.props;
+    const { name, statement, blurb, contact } = this.props;
     return (
       <PageLayout>
-        <Grid stackable columns={2}>
-          <Grid.Column>
-            <img src="/img/josh.jpg" className="pic" alt="Josh Benson" />
-          </Grid.Column>
-          <Grid.Column>
-            <FontAwesomeIcon icon={faQuoteLeft} size="3x" />
-            <div className="statement">{statement}</div>
-            <FontAwesomeIcon icon={faQuoteRight} size="3x" />
-            <Blurb blurb={blurb} />
-          </Grid.Column>
-          <Grid.Column>
-            <Contact {...contact} />
-          </Grid.Column>
-        </Grid>
+        <ImageHeader name={name} statement={statement} contact={contact} />
+        <Container className="introduction">
+          <Grid divided stackable columns={2}>
+            <Grid.Column>
+              <img src="/img/josh.jpg" className="pic" alt="Josh Benson" />
+            </Grid.Column>
+            <Grid.Column>
+              <Blurb blurb={blurb} />
+            </Grid.Column>
+          </Grid>
+        </Container>
       </PageLayout>
     );
   }
@@ -43,7 +38,8 @@ class Home extends React.Component {
 const mapStateToProps = state => ({
   statement: state.home.statement,
   blurb: state.home.blurb,
-  contact: state.home.contact
+  contact: state.home.contact,
+  name: state.home.name
 });
 
 export default connect(

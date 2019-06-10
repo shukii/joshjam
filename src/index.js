@@ -11,8 +11,6 @@ import "semantic-ui-css/semantic.min.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
-import "./index.css";
-
 const store = createStore(
   reducer,
   composeWithDevTools(applyMiddleware(thunkMiddleware))
