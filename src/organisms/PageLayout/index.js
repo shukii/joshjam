@@ -6,9 +6,7 @@ import "./_styles.scss";
 const PageLayout = ({ children }) => (
   <div className="page-layout">
     <NavigationBar />
-    {/* <Container textAlign="center"> */}
     <div className="page-content">{children}</div>
-    {/* </Container> */}
   </div>
 );
 
