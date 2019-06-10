@@ -1,0 +1,34 @@
+@import '../../scss/global';
+
+.image-header {
+    width: 100%;
+    height: 90vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url('/img/astro.jpg');
+    text-align: center;
+
+    .full-name {
+        color: $white;
+        position: relative;
+        top: 20%;
+        font-size: 48px;
+        font-family: $heading-font;
+    }
+
+    .statement {
+        color: $white;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 45px;
+        margin: 0 15px 0 15px;
+        position: relative;
+        top: 25%;
+
+        .fa-quote-left, .fa-quote-right {
+            margin-bottom: 10px;    
+        }
+    }
+}
