@@ -1,22 +1,22 @@
-import React from 'react';
-import {render} from 'react-dom';
-import {BrowserRouter} from 'react-router-dom';
-import {Provider} from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import thunkMiddleware from 'redux-thunk';
-import reducer from './reducers';
-import 'semantic-ui-css/semantic.min.css';
+import React from "react";
+import { render } from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware } from "redux";
+import { composeWithDevTools } from "redux-devtools-extension";
+import thunkMiddleware from "redux-thunk";
+import reducer from "./reducers";
+import "semantic-ui-css/semantic.min.css";
 
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
 
-import './index.css';
+import "./index.css";
 
 const store = createStore(
   reducer,
   composeWithDevTools(applyMiddleware(thunkMiddleware))
-)
+);
 
 render(
   <Provider store={store}>
@@ -24,7 +24,7 @@ render(
       <App />
     </BrowserRouter>
   </Provider>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
