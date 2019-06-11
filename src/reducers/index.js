@@ -24,6 +24,10 @@ const reducer = (state = initialState, action) => {
       const portfolio = action.payload;
       return { ...state, portfolio: portfolio };
 
+    case types.FETCH_CONTACT:
+      const contact = action.payload;
+      return { ...state, contact: contact };
+
     default:
       return state;
   }

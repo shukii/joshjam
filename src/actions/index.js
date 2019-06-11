@@ -43,3 +43,14 @@ export const fetchPortfolio = () => dispatch => {
       });
     });
 };
+
+export const fetchContact = () => dispatch => {
+  fetch(`data/contact.json`)
+    .then(response => response.json())
+    .then(response => {
+      dispatch({
+        type: types.FETCH_CONTACT,
+        payload: response
+      });
+    });
+};

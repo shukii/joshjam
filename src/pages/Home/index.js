@@ -8,7 +8,12 @@ import ImageHeader from "../../organisms/ImageHeader";
 import Introduction from "../../molecules/Introduction";
 import SkillsList from "../../molecules/SkillList";
 
-import { fetchHome, fetchSkills, fetchBrands } from "../../actions";
+import {
+  fetchHome,
+  fetchSkills,
+  fetchBrands,
+  fetchContact
+} from "../../actions";
 
 import "./_styles.scss";
 import BrandTable from "../../molecules/BrandTable";
@@ -18,6 +23,7 @@ class Home extends React.Component {
     this.props.fetchHome();
     this.props.fetchSkills();
     this.props.fetchBrands();
+    this.props.fetchContact();
   }
 
   render() {
@@ -46,14 +52,14 @@ class Home extends React.Component {
 const mapStateToProps = state => ({
   statement: state.home.statement,
   blurb: state.home.blurb,
-  contact: state.home.contact,
   name: state.home.name,
   picture: state.home.picture,
   skills: state.skills,
-  brands: state.brands
+  brands: state.brands,
+  contact: state.contact
 });
 
 export default connect(
   mapStateToProps,
-  { fetchHome, fetchSkills, fetchBrands }
+  { fetchHome, fetchSkills, fetchBrands, fetchContact }
 )(Home);
