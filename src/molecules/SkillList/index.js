@@ -18,7 +18,6 @@ class SkillList extends React.Component {
               {skill.name}
             </Label>
           ))}
-          ;
         </Container>
       );
     }

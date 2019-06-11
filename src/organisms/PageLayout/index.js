@@ -4,7 +4,7 @@ import Footer from "../../organisms/Footer";
 
 const PageLayout = ({ children }) => (
   <div className="page-layout">
-    <NavigationBar />
+    <NavigationBar scrollOffset={729} />
     <div className="page-content">{children}</div>
     <Footer />
   </div>
