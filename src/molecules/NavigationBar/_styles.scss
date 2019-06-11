@@ -1,7 +1,19 @@
 @import '../../scss/global';
 
+@keyframes fill {
+    0% { background-color: transparent; color: $white; }
+    100% { background-color: $white; color: $black; }
+}
+
+@keyframes unfill {
+    0% { background-color: $white; color: $black; }
+    100% { background-color: transparent; color: $white; }
+}
+
 .ui.menu.navigation-bar {
     background-color: transparent;
+    animation-name: unfill;
+    animation-duration: 0.5s;
 
     a {
         text-decoration: none;
@@ -11,7 +23,9 @@
 
     &-fill {
         background-color: $white;
-
+        animation-name: fill;
+        animation-duration: 0.5s;
+        
         a {
             color: $black;
         }

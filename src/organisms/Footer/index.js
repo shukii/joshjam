@@ -22,7 +22,7 @@ class Footer extends React.Component {
           <Contact {...contact} small />
           {copyright && (
             <div className="copyright">
-              Copyright <FontAwesomeIcon icon={faCopyright} /> 2019 {copyright}{" "}
+              Copyright <FontAwesomeIcon icon={faCopyright} /> 2019 {copyright},
               All Rights Reserved.
             </div>
           )}
