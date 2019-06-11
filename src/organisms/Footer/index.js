@@ -16,7 +16,7 @@ class Footer extends React.Component {
     const { contact } = this.props;
 
     if (contact) {
-      const { telephone, copyright } = contact;
+      const { copyright } = contact;
       return (
         <div className="footer">
           <Contact {...contact} small />

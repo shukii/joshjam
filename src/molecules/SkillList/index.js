@@ -1,5 +1,6 @@
 import React from "react";
-import { Label, Container, Header } from "semantic-ui-react";
+import { Container, Header } from "semantic-ui-react";
+import SkillLabel from "../../atoms/SkillLabel";
 
 import "./_styles.scss";
 
@@ -11,12 +12,7 @@ class SkillList extends React.Component {
         <Container>
           <Header>Skills</Header>
           {skills.map(skill => (
-            <Label
-              key={skill.name}
-              className={`skill-label skill-label-${skill.type}`}
-            >
-              {skill.name}
-            </Label>
+            <SkillLabel key={skill.name} {...skill} />
           ))}
         </Container>
       );

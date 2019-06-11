@@ -74,9 +74,5 @@
   {
     "name": "Security Testing",
     "type": "methodology"
-  },
-  {
-    "name": "Raspberry Pi",
-    "type": "hardware"
   }
 ]
