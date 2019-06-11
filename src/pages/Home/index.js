@@ -1,25 +1,43 @@
 import React from "react";
 import { connect } from "react-redux";
 
+import { Divider } from "semantic-ui-react";
+
 import PageLayout from "../../organisms/PageLayout";
 import ImageHeader from "../../organisms/ImageHeader";
 import Introduction from "../../molecules/Introduction";
+import SkillsList from "../../molecules/SkillList";
 
-import { fetchHome } from "../../actions";
+import { fetchHome, fetchSkills, fetchBrands } from "../../actions";
 
 import "./_styles.scss";
+import BrandTable from "../../molecules/BrandTable";
 
 class Home extends React.Component {
   componentWillMount() {
     this.props.fetchHome();
+    this.props.fetchSkills();
+    this.props.fetchBrands();
   }
 
   render() {
-    const { name, statement, blurb, contact, picture } = this.props;
+    const {
+      name,
+      statement,
+      blurb,
+      contact,
+      picture,
+      skills,
+      brands
+    } = this.props;
     return (
       <PageLayout>
         <ImageHeader name={name} statement={statement} contact={contact} />
         <Introduction blurb={blurb} picture={picture} name={name} />
+        <Divider />
+        <SkillsList skills={skills} />
+        <Divider />
+        <BrandTable brands={brands} />
       </PageLayout>
     );
   }
@@ -30,10 +48,12 @@ const mapStateToProps = state => ({
   blurb: state.home.blurb,
   contact: state.home.contact,
   name: state.home.name,
-  picture: state.home.picture
+  picture: state.home.picture,
+  skills: state.skills,
+  brands: state.brands
 });
 
 export default connect(
   mapStateToProps,
-  { fetchHome }
+  { fetchHome, fetchSkills, fetchBrands }
 )(Home);
