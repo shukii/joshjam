@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Grid, Container, Header } from "semantic-ui-react";
 import BrandImage from "../../atoms/BrandImage";
 
@@ -9,7 +9,7 @@ class BrandTable extends React.Component {
       return (
         <Container>
           <Header>Brands</Header>
-          <Grid stackable columns={3} verticalAlign="middle">
+          <Grid stackable centered columns={4} verticalAlign="middle">
             {brands &&
               brands.map(brand => (
                 <Grid.Column key={brand.name}>

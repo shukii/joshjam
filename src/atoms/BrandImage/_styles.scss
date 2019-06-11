@@ -1,3 +1,13 @@
+@import '../../scss/global';
+
 .brand-image {
-  width: 200px;
+  width: 300px;
+
+  @media (min-width: 768px) {
+    width: 150px;
+  }
+
+  @media (min-width: 992px) {
+    width: 200px;
+  }
 }
