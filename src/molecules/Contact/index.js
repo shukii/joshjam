@@ -1,15 +1,22 @@
 import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 import "./styles.scss";
 
 const Contact = props => {
-  const { email, linkedIn, twitter } = props;
+  const { email, linkedIn, twitter, telephone, small } = props;
   return (
-    <div className="contact">
+    <div className={`contact ${small ? "contact-small" : ""}`}>
+      {telephone && small && (
+        <div className="telephone">
+          <div>
+            <FontAwesomeIcon icon={faPhone} size="2x" /> {telephone}
+          </div>
+        </div>
+      )}
       {email && (
         <div className="email">
           <a href={`mailto:${email}`}>

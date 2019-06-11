@@ -5,6 +5,7 @@ import { fetchContact } from "../../actions";
 import "./_styles.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
+import Contact from "../../molecules/Contact";
 
 class Footer extends React.Component {
   componentWillMount() {
@@ -18,7 +19,7 @@ class Footer extends React.Component {
       const { telephone, copyright } = contact;
       return (
         <div className="footer">
-          {telephone && <div className="telephone">{telephone}</div>}
+          <Contact {...contact} small />
           {copyright && (
             <div className="copyright">
               Copyright <FontAwesomeIcon icon={faCopyright} /> 2019 {copyright}{" "}

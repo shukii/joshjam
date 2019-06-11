@@ -5,5 +5,12 @@
     background-color: $dark-blue;
     width: 100%;
     color: $white;
-    font-size: 20px;    
+    font-size: 14px;
+    
+    .copyright {
+        position: relative;
+        float: right;
+        top: 40px;
+        right: 8px;
+    }
 }

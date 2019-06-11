@@ -10,6 +10,11 @@
   justify-content: space-around;
   font-size: 30px;
 
+  &-small {
+    font-size: 14px;
+    top: 25%;
+  }
+
   a {
     color: $white;
     text-decoration: none; 
