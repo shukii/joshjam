@@ -1,10 +1,10 @@
 [
   {
-    "name": "React JS",
+    "name": "React",
     "type": "frontend"
   },
   {
-    "name": "Vue JS",
+    "name": "Vue",
     "type": "frontend"
   },
   {
@@ -20,32 +20,52 @@
     "type": "frontend"
   },
   {
-    "name": "CircleCI",
-    "type": "devops"
-  },
-  {
-    "name": "Heroku",
-    "type": "infra"
-  },
-  {
-    "name": "Google Cloud Platform",
-    "type": "infra"
-  },
-  {
-    "name": "AWS",
-    "type": "infra"
-  },
-  {
-    "name": "Azure",
-    "type": "infra"
-  },
-  {
-    "name": "NodeJS",
+    "name": "Node",
     "type": "backend"
   },
   {
     "name": "Java",
     "type": "backend"
+  },
+  {
+    "name": "C#.net",
+    "type": "backend"
+  },
+  {
+    "name": "Python",
+    "type": "backend"
+  },
+  {
+    "name": "MySQL",
+    "type": "database"
+  },
+  {
+    "name": "MongoDB",
+    "type": "database"
+  },
+  {
+    "name": "CircleCI",
+    "type": "devops"
+  },
+  {
+    "name": "Heroku",
+    "type": "devops"
+  },
+  {
+    "name": "Google Cloud Platform",
+    "type": "devops"
+  },
+  {
+    "name": "Docker",
+    "type": "devops"
+  },
+  {
+    "name": "Kubernetes",
+    "type": "devops"
+  },
+  {
+    "name": "AWS",
+    "type": "devops"
   },
   {
     "name": "Swift",
@@ -69,10 +89,6 @@
   },
   {
     "name": "Extreme Programming (XP)",
-    "type": "methodology"
-  },
-  {
-    "name": "Security Testing",
     "type": "methodology"
   }
 ]

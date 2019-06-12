@@ -2,8 +2,6 @@ import React from "react";
 import { Container, Header } from "semantic-ui-react";
 import SkillLabel from "../../atoms/SkillLabel";
 
-import "./_styles.scss";
-
 class SkillList extends React.Component {
   render() {
     const { skills } = this.props;

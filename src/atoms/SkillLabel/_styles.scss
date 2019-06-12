@@ -1,6 +1,8 @@
 @import "../../scss/global";
 
 .ui.label.skill-label {
+  margin-bottom: 10px;
+
   &-frontend {
     background-color: $blue;
     color: $white;
@@ -16,7 +18,7 @@
     color: $white;
   }
 
-  &-infra {
+  &-database {
     background-color: $brown;
     color: $white;
   }
