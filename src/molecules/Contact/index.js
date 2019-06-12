@@ -39,7 +39,11 @@ const Contact = props => {
       )}
       {twitter && (
         <div className="twitter">
-          <a href={`https://twitter.com/${twitter}`}>
+          <a
+            href={`https://twitter.com/${twitter}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span class="sr-only">{`https://twitter.com/${twitter}`}</span>
             <FontAwesomeIcon icon={faTwitter} size="2x" />
           </a>
