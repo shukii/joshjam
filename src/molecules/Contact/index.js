@@ -20,7 +20,7 @@ const Contact = props => {
       {email && (
         <div className="email">
           <a href={`mailto:${email}`}>
-            <span class="sr-only">{email}</span>
+            <span className="sr-only">{email}</span>
             <FontAwesomeIcon icon={faEnvelope} size="2x" />
           </a>
         </div>
@@ -32,7 +32,7 @@ const Contact = props => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span class="sr-only">{`https://www.linkedin.com/in/${linkedIn}`}</span>
+            <span className="sr-only">{`https://www.linkedin.com/in/${linkedIn}`}</span>
             <FontAwesomeIcon icon={faLinkedin} size="2x" />
           </a>
         </div>
@@ -44,7 +44,7 @@ const Contact = props => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span class="sr-only">{`https://twitter.com/${twitter}`}</span>
+            <span className="sr-only">{`https://twitter.com/${twitter}`}</span>
             <FontAwesomeIcon icon={faTwitter} size="2x" />
           </a>
         </div>

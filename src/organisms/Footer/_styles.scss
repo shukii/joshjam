@@ -1,16 +1,16 @@
-@import '../../scss/global';
+@import "../../scss/global";
 
 .footer {
-    height: 100px;
-    background-color: $blue;
-    width: 100%;
-    color: $white;
-    font-size: 14px;
-    
-    .copyright {
-        position: relative;
-        float: right;
-        top: 50px;
-        right: 8px;
-    }
+  height: 100px;
+  background-color: $blue;
+  width: 100%;
+  color: $white;
+  font-size: 14px;
+
+  .copyright {
+    position: relative;
+    float: right;
+    top: 50px;
+    right: 8px;
+  }
 }

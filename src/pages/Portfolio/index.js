@@ -2,8 +2,10 @@ import React from "react";
 import { Header } from "semantic-ui-react";
 import { connect } from "react-redux";
 import PageLayout from "../../organisms/PageLayout";
-import ProjectFolder from "../../organisms/ProjectFolder";
+// import ProjectFolder from "../../organisms/ProjectFolder";
 import { fetchPortfolio } from "../../actions";
+
+import "./_styles.scss";
 
 class Portfolio extends React.Component {
   componentWillMount() {
@@ -11,11 +13,12 @@ class Portfolio extends React.Component {
   }
 
   render() {
-    const { portfolio } = this.props;
+    // const { portfolio } = this.props;
     return (
       <PageLayout>
-        <Header>Portfolio</Header>
-        <ProjectFolder portfolio={portfolio} />
+        <Header className="header">Portfolio</Header>
+        <div className="coming">Coming soon</div>
+        {/* <ProjectFolder portfolio={portfolio} /> */}
       </PageLayout>
     );
   }
