@@ -1,8 +1,18 @@
 @import '../../scss/global';
 
+@-webkit-keyframes fill {
+    0% { background-color: transparent; color: $white; }
+    100% { background-color: $white; color: $black; }
+}
+
 @keyframes fill {
     0% { background-color: transparent; color: $white; }
     100% { background-color: $white; color: $black; }
+}
+
+@-webkit-keyframes unfill {
+    0% { background-color: $white; color: $black; }
+    100% { background-color: transparent; color: $white; }
 }
 
 @keyframes unfill {
@@ -12,8 +22,10 @@
 
 .ui.menu.navigation-bar {
     background-color: transparent;
-    animation-name: unfill;
-    animation-duration: 0.5s;
+    -webkit-animation-name: unfill;
+            animation-name: unfill;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
 
     a {
         text-decoration: none;
@@ -23,8 +35,10 @@
 
     &-fill {
         background-color: $white;
-        animation-name: fill;
-        animation-duration: 0.5s;
+        -webkit-animation-name: fill;
+                animation-name: fill;
+        -webkit-animation-duration: 0.5s;
+                animation-duration: 0.5s;
         
         a {
             color: $black;
