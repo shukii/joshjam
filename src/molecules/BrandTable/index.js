@@ -2,13 +2,15 @@ import React from "react";
 import { Grid, Container, Header } from "semantic-ui-react";
 import BrandImage from "../../atoms/BrandImage";
 
+import './_styles.scss';
+
 class BrandTable extends React.Component {
   render() {
     const { brands } = this.props;
     if (brands) {
       return (
         <Container>
-          <Grid stackable centered columns={4} verticalAlign="middle">
+          <Grid stackable columns={4} textAlign="center" verticalAlign="middle">
             {brands &&
               brands.map(brand => (
                 <Grid.Column key={brand.name}>
