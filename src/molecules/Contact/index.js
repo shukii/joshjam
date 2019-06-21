@@ -12,10 +12,10 @@ const Contact = props => {
     <div className={`contact ${small ? "contact-small" : ""}`}>
       {telephone && small && (
         <div className="telephone">
-          <div>
+          <a href={`tel:${telephone}`}>
             <FontAwesomeIcon icon={faPhone} size="2x" /> {telephone}
             &nbsp;&nbsp;&nbsp;&nbsp;
-          </div>
+          </a>
         </div>
       )}
       {email && (
