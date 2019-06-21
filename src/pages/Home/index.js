@@ -40,9 +40,7 @@ class Home extends React.Component {
       <PageLayout>
         <ImageHeader name={name} statement={statement} contact={contact} />
         <Introduction blurb={blurb} picture={picture} name={name} />
-        <Divider />
-        <SkillsList skills={skills} />
-        <Divider />
+        <SkillsList skills={skills}/>
         <BrandTable brands={brands} />
       </PageLayout>
     );

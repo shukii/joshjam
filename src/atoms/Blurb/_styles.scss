@@ -6,5 +6,9 @@
 
   .line {
     margin-top: 20px;
+
+    &:first-of-type {
+      font-weight: bold;
+    }
   }
 }

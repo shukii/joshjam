@@ -1,36 +1,9 @@
 @import "../../scss/global";
 
 .ui.label.skill-label {
-  margin-bottom: 10px;
-
-  &-frontend {
-    background-color: $blue;
-    color: $white;
-  }
-
-  &-backend {
-    background-color: $purple;
-    color: $white;
-  }
-
-  &-devops {
-    background-color: $green;
-    color: $white;
-  }
-
-  &-database {
-    background-color: $brown;
-    color: $white;
-  }
-
-  &-mobile {
-    background-color: $white;
-    color: $black;
-    border: 1px solid $black;
-  }
-
-  &-methodology {
-    background-color: $black;
-    color: $white;
-  }
+  margin: 0 10px 10px 0;
+  background-color: $white;
+  padding: 10px 30px;
+  border-radius: 16px;
+  color: $black;
 }

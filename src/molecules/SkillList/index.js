@@ -7,12 +7,13 @@ class SkillList extends React.Component {
     const { skills } = this.props;
     if (skills) {
       return (
-        <Container>
-          <Header>Skills</Header>
-          {skills.map(skill => (
-            <SkillLabel key={skill.name} {...skill} />
-          ))}
-        </Container>
+        <div className="skills-list">
+          <Container>
+            {skills.map(skill => (
+              <SkillLabel key={skill.name} {...skill} />
+            ))}
+          </Container>
+        </div>
       );
     }
 

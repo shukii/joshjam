@@ -8,7 +8,6 @@ class BrandTable extends React.Component {
     if (brands) {
       return (
         <Container>
-          <Header>Brands</Header>
           <Grid stackable centered columns={4} verticalAlign="middle">
             {brands &&
               brands.map(brand => (
