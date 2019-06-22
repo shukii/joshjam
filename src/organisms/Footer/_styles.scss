@@ -9,8 +9,11 @@
 
   .copyright {
     position: relative;
-    float: right;
-    top: 45px;
-    right: 8px;
+    top: 50px;
+    left: 5px;
+
+    @include desktop {
+      top: 42px;
+    }
   }
 }

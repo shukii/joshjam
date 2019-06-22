@@ -1,4 +1,4 @@
-@import '../../scss/global';
+@import "../../scss/global";
 
 .contact {
   color: $white;
@@ -9,10 +9,16 @@
   display: flex;
   justify-content: center;
   font-size: 30px;
-  
+
   &-small {
     font-size: 14px;
-    top: 25%;
+    top: 34px;
+
+    @include desktop {
+      float: right;
+      position: relative;
+      right: 20px;
+    }
   }
 
   .telephone {
@@ -21,7 +27,7 @@
 
   a {
     color: $white;
-    text-decoration: none; 
-    cursor:pointer; 
+    text-decoration: none;
+    cursor: pointer;
   }
 }
