@@ -1,8 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import { Divider } from "semantic-ui-react";
-
 import PageLayout from "../../organisms/PageLayout";
 import ImageHeader from "../../organisms/ImageHeader";
 import Introduction from "../../molecules/Introduction";
@@ -38,9 +36,14 @@ class Home extends React.Component {
     } = this.props;
     return (
       <PageLayout>
-        <ImageHeader name={name} statement={statement} contact={contact} />
+        <ImageHeader
+          name={name}
+          statement={statement}
+          contact={contact}
+          page="home"
+        />
         <Introduction blurb={blurb} picture={picture} name={name} />
-        <SkillsList skills={skills}/>
+        <SkillsList skills={skills} />
         <BrandTable brands={brands} />
       </PageLayout>
     );

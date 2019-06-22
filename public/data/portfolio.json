@@ -4,12 +4,18 @@
       "name": "Condé Nast International",
       "image": "condenast.png"
     },
-    "product": "cni dot com",
-    "description": "Company's global corporate website",
-    "images": ["cni-com-1.png", "cni-com-2.png", "cni-com-3.png"],
+    "product": "CNI dotcom",
+    "link": "https://www.condenastinternational.com",
+    "description": "The product is described as Condé Nast's global 'shop front window'. It is fully customisable using a content-management system, allowing the comms team to create and update stunning pages, news articles and brand information.",
+    "images": [
+      "cni-com-1.png",
+      "cni-com-2.png",
+      "cni-com-3.png",
+      "cni-com-4.png"
+    ],
     "skills": [
       {
-        "name": "HTML",
+        "name": "React",
         "type": "frontend"
       },
       {
@@ -17,7 +23,7 @@
         "type": "frontend"
       },
       {
-        "name": "React",
+        "name": "HTML",
         "type": "frontend"
       },
       {
@@ -43,20 +49,17 @@
       "name": "Ordo",
       "image": "ordo.png"
     },
-    "product": "Smart Request App",
-    "description": "Proof of Concept smart payment request PWA",
+    "product": "Ordo Pay",
+    "link": "https://www.ordopay.com/",
+    "description": "A progressive web application (PWA) prototype. The smart payment request app allows users to pay their bills and other people quickly and easily. This app helped Ordo win investment from NBS Ventures Ltd.",
     "images": ["ordo-1.png", "ordo-2.png", "ordo-3.png", "ordo-4.png"],
     "skills": [
       {
-        "name": "HTML",
+        "name": "Vue",
         "type": "frontend"
       },
       {
         "name": "Sass",
-        "type": "frontend"
-      },
-      {
-        "name": "VueJS",
         "type": "frontend"
       },
       {
@@ -67,11 +70,77 @@
   },
   {
     "brand": {
+      "name": "Bestway",
+      "image": "bestway.png"
+    },
+    "product": "Where is my Order? (WIMO)",
+    "link": "https://www.bestwaywholesale.co.uk",
+    "description": "An order tracking web application for wholesale customers. It enabled customers to view the status of their order, reducing enquiries to customer services.",
+    "images": [
+      "bestway-1.png",
+      "bestway-2.png",
+      "bestway-3.png",
+      "bestway-4.png"
+    ],
+    "skills": [
+      {
+        "name": "React",
+        "type": "frontend"
+      },
+      {
+        "name": "Sass",
+        "type": "frontend"
+      },
+      {
+        "name": "CircleCI",
+        "type": "devops"
+      },
+      {
+        "name": "AWS",
+        "type": "devops"
+      }
+    ]
+  },
+  {
+    "brand": {
+      "name": "TalkTalk",
+      "image": "talktalk.png"
+    },
+    "product": "UFO",
+    "link": "https://talktalk.co.uk/ufo",
+    "description": "TalkTalk in York has recently rolled out Ultrafast Fibre Optic Broadband. This project involved creating the brochureware and order flow on main website, as well as eligibility updates to a joint venture website with Sky Broadband",
+    "images": [
+      "talktalk-1.png",
+      "talktalk-2.png",
+      "talktalk-3.png",
+      "talktalk-4.png"
+    ],
+    "skills": [
+      {
+        "name": "AngularJS",
+        "type": "frontend"
+      },
+      {
+        "name": "HTML",
+        "type": "frontend"
+      },
+      {
+        "name": "CSS",
+        "type": "frontend"
+      },
+      {
+        "name": "Contentful CMS",
+        "type": "backend"
+      }
+    ]
+  },
+  {
+    "brand": {
       "name": "Capco",
       "image": "capco.png"
     },
     "product": "CapInTouch",
-    "description": "Company Internal Social Network",
+    "description": "In order for Capco's employees to connect, share knowledge and organise assignments, CapInTouch was created. At its heart, it's a social network, however it had other business functionality, including holiday booking, resource management and operations.",
     "images": ["cit-1.png", "cit-2.png", "cit-3.png", "cit-4.png"],
     "skills": [
       {
@@ -105,29 +174,6 @@
       {
         "name": "MySQL",
         "type": "database"
-      }
-    ]
-  },
-  {
-    "brand": {
-      "name": "TalkTalk",
-      "image": "talktalk.png"
-    },
-    "product": "UFO",
-    "description": "York's Ultrafast Fibre Optic Broadband Brochureware on main website",
-    "images": ["talktalk.png"],
-    "skills": [
-      {
-        "name": "HTML",
-        "type": "frontend"
-      },
-      {
-        "name": "CSS",
-        "type": "frontend"
-      },
-      {
-        "name": "AngularJS",
-        "type": "frontend"
       }
     ]
   }

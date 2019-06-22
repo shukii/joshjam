@@ -5,8 +5,14 @@ class ProjectFolder extends React.Component {
   render() {
     const { portfolio } = this.props;
     if (portfolio) {
-      return portfolio.map(project => {
-        return <Project key={project.product} {...project} />;
+      return portfolio.map((project, idx) => {
+        return (
+          <Project
+            key={project.product}
+            {...project}
+            divider={idx < portfolio.length - 1}
+          />
+        );
       });
     }
 
