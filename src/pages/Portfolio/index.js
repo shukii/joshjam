@@ -1,8 +1,8 @@
 import React from "react";
-import { Header } from "semantic-ui-react";
 import { connect } from "react-redux";
 import PageLayout from "../../organisms/PageLayout";
-// import ProjectFolder from "../../organisms/ProjectFolder";
+import ProjectFolder from "../../organisms/ProjectFolder";
+import ImageHeader from "../../organisms/ImageHeader";
 import { fetchPortfolio } from "../../actions";
 
 import "./_styles.scss";
@@ -16,9 +16,8 @@ class Portfolio extends React.Component {
     // const { portfolio } = this.props;
     return (
       <PageLayout>
-        <Header className="header">Portfolio</Header>
-        <div className="coming">Coming soon</div>
-        {/* <ProjectFolder portfolio={portfolio} /> */}
+        <ImageHeader name="Portfolio" page="portfolio" />
+        <ProjectFolder portfolio={this.props.portfolio} />
       </PageLayout>
     );
   }

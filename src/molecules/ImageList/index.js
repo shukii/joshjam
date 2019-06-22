@@ -1,21 +1,21 @@
 import React from "react";
-import { Grid } from "semantic-ui-react";
+import { Image } from "semantic-ui-react";
 
 import "./_styles.scss";
 
 const ImageList = props => {
   return (
-    <Grid stackable columns={3}>
+    <Image.Group size="medium">
       {props.images.map(image => (
-        <Grid.Column key={image}>
-          <img
-            className="project-image"
-            src={`/img/portfolio/${image}`}
-            alt={image}
-          />
-        </Grid.Column>
+        <Image
+          className="project-image"
+          src={`/img/portfolio/${image}`}
+          alt={image}
+          bordered
+          rounded
+        />
       ))}
-    </Grid>
+    </Image.Group>
   );
 };
 

@@ -1,8 +1,8 @@
 import React from "react";
-import { Grid, Container, Header } from "semantic-ui-react";
+import { Grid, Container } from "semantic-ui-react";
 import BrandImage from "../../atoms/BrandImage";
 
-import './_styles.scss';
+import "./_styles.scss";
 
 class BrandTable extends React.Component {
   render() {

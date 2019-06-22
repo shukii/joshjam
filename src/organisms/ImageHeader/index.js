@@ -8,16 +8,18 @@ import Contact from "../../molecules/Contact";
 import "./_styles.scss";
 
 const ImageHeader = props => {
-  const { name, statement, contact } = props;
+  const { name, statement, contact, page } = props;
   return (
-    <header className="image-header">
-      <div className="full-name">{name}</div>
-      <div className="statement">
-        <FontAwesomeIcon icon={faQuoteLeft} /> {statement}
-        {"  "}
-        <FontAwesomeIcon icon={faQuoteRight} />
-      </div>
-      <Contact {...contact} />
+    <header className={`image-header image-header-${page}`}>
+      {name && <div className="full-name">{name}</div>}
+      {statement && (
+        <div className="statement">
+          <FontAwesomeIcon icon={faQuoteLeft} /> {statement}
+          {"  "}
+          <FontAwesomeIcon icon={faQuoteRight} />
+        </div>
+      )}
+      {contact && <Contact {...contact} />}
     </header>
   );
 };

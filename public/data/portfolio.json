@@ -4,7 +4,8 @@
       "name": "Condé Nast International",
       "image": "condenast.png"
     },
-    "product": "cni dot com",
+    "product": "CNI dotcom",
+    "link": "https://www.condenastinternational.com",
     "description": "Company's global corporate website",
     "images": ["cni-com-1.png", "cni-com-2.png", "cni-com-3.png"],
     "skills": [
@@ -67,6 +68,30 @@
   },
   {
     "brand": {
+      "name": "TalkTalk",
+      "image": "talktalk.png"
+    },
+    "product": "UFO",
+    "link": "https://talktalk.co.uk/ufo",
+    "description": "York's Ultrafast Fibre Optic Broadband Brochureware on main website",
+    "images": ["talktalk.png"],
+    "skills": [
+      {
+        "name": "HTML",
+        "type": "frontend"
+      },
+      {
+        "name": "CSS",
+        "type": "frontend"
+      },
+      {
+        "name": "AngularJS",
+        "type": "frontend"
+      }
+    ]
+  },
+  {
+    "brand": {
       "name": "Capco",
       "image": "capco.png"
     },
@@ -105,29 +130,6 @@
       {
         "name": "MySQL",
         "type": "database"
-      }
-    ]
-  },
-  {
-    "brand": {
-      "name": "TalkTalk",
-      "image": "talktalk.png"
-    },
-    "product": "UFO",
-    "description": "York's Ultrafast Fibre Optic Broadband Brochureware on main website",
-    "images": ["talktalk.png"],
-    "skills": [
-      {
-        "name": "HTML",
-        "type": "frontend"
-      },
-      {
-        "name": "CSS",
-        "type": "frontend"
-      },
-      {
-        "name": "AngularJS",
-        "type": "frontend"
       }
     ]
   }

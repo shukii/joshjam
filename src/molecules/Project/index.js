@@ -4,17 +4,27 @@ import SkillList from "../SkillList";
 import ImageList from "../ImageList";
 
 import "./_styles.scss";
+import { Container } from "semantic-ui-react";
 
 class Project extends React.Component {
   render() {
-    const { brand, product, description, skills, images } = this.props;
+    const { brand, product, description, link, skills, images } = this.props;
     return (
-      <div className="project">
-        <BrandImage {...brand} />
-        <div>{product}</div>
-        <div>{description}</div>
+      <div>
+        <Container className="project">
+          <BrandImage {...brand} colour />
+          {link && (
+            <div>
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                {product}
+              </a>
+            </div>
+          )}
+          <div>{description}</div>
+
+          <ImageList images={images} />
+        </Container>
         <SkillList skills={skills} />
-        <ImageList images={images} />
       </div>
     );
   }
