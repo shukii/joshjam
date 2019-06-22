@@ -6,7 +6,7 @@
     },
     "product": "CNI dotcom",
     "link": "https://www.condenastinternational.com",
-    "description": "Company's global corporate website",
+    "description": "The product is described as Condé Nast's global 'shop front window'. It is fully customisable using a content-management system, allowing the comms team to create and update stunning pages, news articles and brand information.",
     "images": [
       "cni-com-1.png",
       "cni-com-2.png",
@@ -15,7 +15,7 @@
     ],
     "skills": [
       {
-        "name": "HTML",
+        "name": "React",
         "type": "frontend"
       },
       {
@@ -23,7 +23,7 @@
         "type": "frontend"
       },
       {
-        "name": "React",
+        "name": "HTML",
         "type": "frontend"
       },
       {
@@ -49,20 +49,17 @@
       "name": "Ordo",
       "image": "ordo.png"
     },
-    "product": "Smart Request App",
-    "description": "Proof of Concept smart payment request PWA",
+    "product": "Ordo Pay",
+    "link": "https://www.ordopay.com/",
+    "description": "A progressive web application (PWA) prototype. The smart payment request app allows users to pay their bills and other people quickly and easily. This app helped Ordo win investment from NBS Ventures Ltd.",
     "images": ["ordo-1.png", "ordo-2.png", "ordo-3.png", "ordo-4.png"],
     "skills": [
       {
-        "name": "HTML",
+        "name": "VueJS",
         "type": "frontend"
       },
       {
         "name": "Sass",
-        "type": "frontend"
-      },
-      {
-        "name": "VueJS",
         "type": "frontend"
       },
       {
@@ -78,9 +75,18 @@
     },
     "product": "UFO",
     "link": "https://talktalk.co.uk/ufo",
-    "description": "York's Ultrafast Fibre Optic Broadband Brochureware on main website",
-    "images": ["talktalk.png"],
+    "description": "TalkTalk in York has recently rolled out Ultrafast Fibre Optic Broadband. This project involved creating the brochureware and order flow on main website, as well as eligibility updates to a joint venture website with Sky Broadband",
+    "images": [
+      "talktalk-1.png",
+      "talktalk-2.png",
+      "talktalk-3.png",
+      "talktalk-4.png"
+    ],
     "skills": [
+      {
+        "name": "AngularJS",
+        "type": "frontend"
+      },
       {
         "name": "HTML",
         "type": "frontend"
@@ -90,8 +96,8 @@
         "type": "frontend"
       },
       {
-        "name": "AngularJS",
-        "type": "frontend"
+        "name": "Contentful CMS",
+        "type": "backend"
       }
     ]
   },
