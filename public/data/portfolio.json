@@ -55,7 +55,7 @@
     "images": ["ordo-1.png", "ordo-2.png", "ordo-3.png", "ordo-4.png"],
     "skills": [
       {
-        "name": "VueJS",
+        "name": "Vue",
         "type": "frontend"
       },
       {
@@ -65,6 +65,39 @@
       {
         "name": "PWA",
         "type": "frontend"
+      }
+    ]
+  },
+  {
+    "brand": {
+      "name": "Bestway",
+      "image": "bestway.png"
+    },
+    "product": "Where is my Order? (WIMO)",
+    "link": "https://www.bestwaywholesale.co.uk",
+    "description": "An order tracking web application for wholesale customers. It enabled customers to view the status of their order, reducing enquiries to customer services.",
+    "images": [
+      "bestway-1.png",
+      "bestway-2.png",
+      "bestway-3.png",
+      "bestway-4.png"
+    ],
+    "skills": [
+      {
+        "name": "React",
+        "type": "frontend"
+      },
+      {
+        "name": "Sass",
+        "type": "frontend"
+      },
+      {
+        "name": "CircleCI",
+        "type": "devops"
+      },
+      {
+        "name": "AWS",
+        "type": "devops"
       }
     ]
   },
@@ -107,7 +140,7 @@
       "image": "capco.png"
     },
     "product": "CapInTouch",
-    "description": "Company Internal Social Network",
+    "description": "In order for Capco's employees to connect, share knowledge and organise assignments, CapInTouch was created. At its heart, it's a social network, however it had other business functionality, including holiday booking, resource management and operations.",
     "images": ["cit-1.png", "cit-2.png", "cit-3.png", "cit-4.png"],
     "skills": [
       {
