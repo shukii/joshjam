@@ -7,7 +7,12 @@
     "product": "CNI dotcom",
     "link": "https://www.condenastinternational.com",
     "description": "Company's global corporate website",
-    "images": ["cni-com-1.png", "cni-com-2.png", "cni-com-3.png"],
+    "images": [
+      "cni-com-1.png",
+      "cni-com-2.png",
+      "cni-com-3.png",
+      "cni-com-4.png"
+    ],
     "skills": [
       {
         "name": "HTML",

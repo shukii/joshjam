@@ -13,11 +13,11 @@ class Portfolio extends React.Component {
   }
 
   render() {
-    // const { portfolio } = this.props;
+    const { portfolio } = this.props;
     return (
       <PageLayout>
         <ImageHeader name="Portfolio" page="portfolio" />
-        <ProjectFolder portfolio={this.props.portfolio} />
+        <ProjectFolder portfolio={portfolio} />
       </PageLayout>
     );
   }

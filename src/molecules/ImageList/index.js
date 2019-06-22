@@ -5,7 +5,7 @@ import "./_styles.scss";
 
 const ImageList = props => {
   return (
-    <Image.Group size="medium">
+    <Image.Group size="large">
       {props.images.map(image => (
         <Image
           className="project-image"
