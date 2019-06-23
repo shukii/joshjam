@@ -10,10 +10,11 @@ const Contact = props => {
   const { email, linkedIn, twitter, telephone, small } = props;
   return (
     <div className={`contact ${small ? "contact-small" : ""}`}>
-      {telephone && small && (
-        <div className="telephone">
+      {telephone && (
+        <div className={`telephone ${small ? "telephone-small" : ""}`}>
           <a href={`tel:${telephone}`}>
-            <FontAwesomeIcon icon={faPhone} size="2x" /> {telephone}
+            <FontAwesomeIcon icon={faPhone} size="2x" />{" "}
+            <span class="telephone-number">{small && telephone}</span>
             &nbsp;&nbsp;&nbsp;&nbsp;
           </a>
         </div>

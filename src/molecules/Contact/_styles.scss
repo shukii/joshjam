@@ -23,6 +23,22 @@
 
   .telephone {
     font-weight: bold;
+
+    @include tablet {
+      display: none;
+    }
+
+    &-small {
+      display: inline;
+    }
+
+    &-number {
+      display: none;
+
+      @include tablet {
+        display: inline;
+      }
+    }
   }
 
   a {
