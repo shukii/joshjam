@@ -52,7 +52,7 @@
     "product": "Ordo Pay",
     "link": "https://www.ordopay.com/",
     "description": "A progressive web application (PWA) prototype. The smart payment request app allows users to pay their bills and other people quickly and easily. This app helped Ordo win investment from NBS Ventures Ltd.",
-    "images": ["ordo-1.png", "ordo-2.png", "ordo-3.png", "ordo-4.png"],
+    "images": ["ordo-1.png", "ordo-2.png"],
     "skills": [
       {
         "name": "Vue",
