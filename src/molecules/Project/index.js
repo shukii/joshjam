@@ -37,8 +37,8 @@ class Project extends React.Component {
       <div>
         <Container className="project">
           <BrandImage {...brand} colour />
-          <div class="project-title">{this.generateProjectTitle()}</div>
-          <div class="project-description">{description}</div>
+          <div className="project-title">{this.generateProjectTitle()}</div>
+          <div className="project-description">{description}</div>
           <ImageList images={images} />
         </Container>
         <SkillList className="project-skills" skills={skills} />

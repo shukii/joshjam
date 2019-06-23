@@ -8,6 +8,7 @@ const ImageList = props => {
     <Image.Group size="large">
       {props.images.map(image => (
         <Image
+          key={image}
           className="project-image"
           src={`/img/portfolio/${image}`}
           alt={image}
