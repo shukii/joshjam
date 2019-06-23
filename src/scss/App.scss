@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:700|Open+Sans:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:700|Open+Sans:400,700&display=swap");
 
 @import "./variables";
 @import "./mixins";
@@ -11,4 +11,8 @@
 
 * {
   font-family: $default-font;
+}
+
+#root {
+  overflow-x: hidden;
 }
