@@ -9,9 +9,21 @@ class SkillList extends React.Component {
       return (
         <div className="skills-list">
           <Container>
-            {skills.map(skill => (
-              <SkillLabel key={skill.name} {...skill} />
-            ))}
+            {skills
+              .sort((a, b) => {
+                if (a.name > b.name) {
+                  return 1;
+                }
+
+                if (b.name > a.name) {
+                  return -1;
+                }
+
+                return 0;
+              })
+              .map(skill => (
+                <SkillLabel key={skill.name} {...skill} />
+              ))}
           </Container>
         </div>
       );

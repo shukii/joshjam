@@ -4,6 +4,10 @@
     "type": "frontend"
   },
   {
+    "name": "Redux",
+    "type": "frontend"
+  },
+  {
     "name": "Vue",
     "type": "frontend"
   },
@@ -16,7 +20,19 @@
     "type": "frontend"
   },
   {
+    "name": "Sass",
+    "type": "frontend"
+  },
+  {
+    "name": "AngularJS",
+    "type": "frontend"
+  },
+  {
     "name": "JavaScript",
+    "type": "frontend"
+  },
+  {
+    "name": "ES6",
     "type": "frontend"
   },
   {
@@ -28,12 +44,24 @@
     "type": "backend"
   },
   {
+    "name": "Spring",
+    "type": "backend"
+  },
+  {
+    "name": "Hibernate",
+    "type": "backend"
+  },
+  {
     "name": "C#.net",
     "type": "backend"
   },
   {
     "name": "Python",
     "type": "backend"
+  },
+  {
+    "name": "Contentful",
+    "type": "cms"
   },
   {
     "name": "MySQL",
@@ -64,12 +92,20 @@
     "type": "devops"
   },
   {
-    "name": "AWS",
+    "name": "Amazon Web Services",
     "type": "devops"
   },
   {
     "name": "Swift",
     "type": "mobile"
+  },
+  {
+    "name": "Git",
+    "type": "tools"
+  },
+  {
+    "name": "Raspberry Pi",
+    "type": "hardware"
   },
   {
     "name": "Test Driven Development",
@@ -89,6 +125,18 @@
   },
   {
     "name": "Extreme Programming (XP)",
+    "type": "methodology"
+  },
+  {
+    "name": "Idea Generation",
+    "type": "methodology"
+  },
+  {
+    "name": "Prototyping",
+    "type": "methodology"
+  },
+  {
+    "name": "Security Testing",
     "type": "methodology"
   }
 ]
