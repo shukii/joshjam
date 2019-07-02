@@ -1,6 +1,34 @@
 [
   {
     "brand": {
+      "name": "GroupNexus",
+      "image": "groupnexus.png"
+    },
+    "product": "Self-Care Portal",
+    "description": "A web application to manage the issue of parking permits for staff at a retail park",
+    "images": [
+      "groupnexus-1.jpg",
+      "groupnexus-2.jpg",
+      "groupnexus-3.jpg",
+      "groupnexus-4.jpg"
+    ],
+    "skills": [
+      {
+        "name": "React",
+        "type": "frontend"
+      },
+      {
+        "name": "Sass",
+        "type": "frontend"
+      },
+      {
+        "name": "HTML",
+        "type": "frontend"
+      }
+    ]
+  },
+  {
+    "brand": {
       "name": "Condé Nast International",
       "image": "condenast.png"
     },
