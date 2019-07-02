@@ -103,6 +103,35 @@
   },
   {
     "brand": {
+      "name": "House of Fraser",
+      "image": "houseoffraser.png"
+    },
+    "product": "Web Elementary",
+    "link": "https://www.houseoffraser.co.uk",
+    "description": "Contributed to a component library for the header of the House of Fraser website, including search input, search results preview, cookie warning and delivery offer bar.",
+    "images": [
+      "hof-1.jpg",
+      "hof-2.jpg",
+      "hof-3.jpg",
+      "hof-4.jpg"
+    ],
+    "skills": [
+      {
+        "name": "React",
+        "type": "frontend"
+      },
+      {
+        "name": "Sass",
+        "type": "frontend"
+      },
+      {
+        "name": "HTML",
+        "type": "frontend"
+      }
+    ]
+  },
+  {
+    "brand": {
       "name": "TalkTalk",
       "image": "talktalk.png"
     },

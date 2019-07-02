@@ -138,5 +138,17 @@
   {
     "name": "Security Testing",
     "type": "methodology"
+  },
+  {
+    "name": "Enzyme",
+    "type": "testing"
+  },
+  {
+    "name": "Jest",
+    "type": "testing"
+  },
+  {
+    "name": "Cypress",
+    "type": "testing"
   }
 ]
