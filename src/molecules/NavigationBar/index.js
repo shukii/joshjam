@@ -44,6 +44,9 @@ class NavigationBar extends React.Component {
         <Menu.Item>
           <Link to="/portfolio">Portfolio</Link>
         </Menu.Item>
+        <Menu.Item>
+          <Link to="/cv">CV</Link>
+        </Menu.Item>
       </Menu>
     );
   }
