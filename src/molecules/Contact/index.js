@@ -2,20 +2,20 @@ import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faTwitter /*, faWhatsapp */ } from "@fortawesome/free-brands-svg-icons";
 
 import "./_styles.scss";
 
 const Contact = props => {
-  const { email, linkedIn, twitter, telephone, whatsapp, small } = props;
+  const { email, linkedIn, twitter, telephone, /*whatsapp,*/ small } = props;
   return (
     <div className={`contact ${small ? "contact-small" : ""}`}>
       {telephone && (
         <div className={`telephone ${small ? "telephone-small" : ""}`}>
           <a href={`tel:${telephone}`}>
             <FontAwesomeIcon icon={faPhone} size="2x" />{" "}
-            <span class="telephone-number">{small && telephone}</span>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span className="telephone-number">{small && telephone}</span>
+            &nbsp;&nbsp;
           </a>
         </div>
       )}
@@ -25,7 +25,7 @@ const Contact = props => {
             <span className="sr-only">{email}</span>
             <FontAwesomeIcon icon={faEnvelope} size="2x" />
           </a>
-          &nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;
         </div>
       )}
       {linkedIn && (
@@ -38,7 +38,7 @@ const Contact = props => {
             <span className="sr-only">{`https://www.linkedin.com/in/${linkedIn}`}</span>
             <FontAwesomeIcon icon={faLinkedin} size="2x" />
           </a>
-          &nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;
         </div>
       )}
       {twitter && (
@@ -51,16 +51,16 @@ const Contact = props => {
             <span className="sr-only">{`https://twitter.com/${twitter}`}</span>
             <FontAwesomeIcon icon={faTwitter} size="2x" />
           </a>
-          &nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;
         </div>
       )}
-      {whatsapp && (
+      {/* {whatsapp && (
         <div className="whatsapp">
           <a href={`https://api.whatsapp.com/send?phone=${whatsapp}`}>
             <FontAwesomeIcon icon={faWhatsapp} size="2x" />{" "}
           </a>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
