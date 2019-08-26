@@ -2,12 +2,12 @@ import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 import "./_styles.scss";
 
 const Contact = props => {
-  const { email, linkedIn, twitter, telephone, small } = props;
+  const { email, linkedIn, twitter, telephone, whatsapp, small } = props;
   return (
     <div className={`contact ${small ? "contact-small" : ""}`}>
       {telephone && (
@@ -50,6 +50,14 @@ const Contact = props => {
           >
             <span className="sr-only">{`https://twitter.com/${twitter}`}</span>
             <FontAwesomeIcon icon={faTwitter} size="2x" />
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+      )}
+      {whatsapp && (
+        <div className="whatsapp">
+          <a href={`https://api.whatsapp.com/send?phone=${whatsapp}`}>
+            <FontAwesomeIcon icon={faWhatsapp} size="2x" />{" "}
           </a>
         </div>
       )}
