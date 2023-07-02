@@ -1,5 +1,5 @@
 # Use the official Node.js 12 image 
-FROM node:12-alpine as build
+FROM node:12.22.8 as build
 
 # Create and change to the app directory
 WORKDIR /app
