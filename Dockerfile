@@ -16,10 +16,8 @@ COPY . .
 # Build the React app for production 
 RUN npm run build
 
-FROM nginx:stable-alpine 
-
-COPY --from=build /app/build /usr/share/nginx/html
+RUN npm install -g serve
 
 EXPOSE 3000
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["serve", "-s", "build"]
