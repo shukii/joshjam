@@ -16,8 +16,8 @@ COPY . .
 # Build the React app for production 
 RUN yarn build
 
-# Expose port 80 
-EXPOSE 80
+# Expose port 3000 
+EXPOSE 3000
 
 # Serve the app 
 CMD ["yarn", "start"]
