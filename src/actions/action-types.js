@@ -1,7 +1,9 @@
-export default {
+const actions = {
   FETCH_HOME: "FETCH_HOME",
   FETCH_SKILLS: "FETCH_SKILLS",
   FETCH_BRANDS: "FETCH_BRANDS",
   FETCH_PORTFOLIO: "FETCH_PORTFOLIO",
   FETCH_CONTACT: "FETCH_CONTACT"
 };
+
+export default actions
