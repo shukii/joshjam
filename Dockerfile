@@ -12,4 +12,6 @@ RUN npm install
 # Build the react app
 RUN npm run build
 
+EXPOSE 3000
+
 CMD ["node", "server.js"]
