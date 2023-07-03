@@ -9,6 +9,8 @@ COPY . .
 # Install dependencies
 RUN npm install
 
+RUN npm rebuild node-sass
+
 # Build the react app
 RUN npm run build
 
